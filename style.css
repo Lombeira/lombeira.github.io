@@ -39,7 +39,6 @@ h3 {
   margin: 0px;
   border: 0px;
   color: aliceblue;
-
 }
 
 ul {
@@ -71,11 +70,17 @@ p {
 }
 .skills {
   display: flex;
-  align-items: center;
+
   justify-content: center;
-  flex-direction: column ;
+  flex-direction: row;
 }
 
+.sub_item {
+  margin-bottom: 5px;
+}
+.space_between {
+  padding: 60px;
+}
 footer {
   margin-top: 50px;
 }
