@@ -1,19 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(54, 68, 80);
+        font-family: sans-serif;
+      }
+      h1 {
+        color: aliceblue;
+        margin-right: 50px;
+      }
+      h3 {
+        color: aliceblue;
+      }
+      ul {
+        color: aliceblue;
+      }
+      img {
+        border-radius: 50%;
+      }
+      p {
+        color: aliceblue;
+        line-height: 1.2em;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        max-width: 500px;
+      }
+      .nickname {
+        font-family: cursive;
+      }
+      .minilogo {
+        margin-right: 30px;
+      }
+      
+    </style>
+
     <title>Document</title>
   </head>
   <body>
-    <h1>Glauco <strong>[Lombeira]</strong> Lomenha</h1>
-    <img
-      src="/img/2.2.png"
-      alt="Foto do Lombeira sorrindo"
-      width="200px"
-      style="border-radius: 50%; margin-left: 100px"
-    />
+    <h1 style="margin-left: 70px">
+      Glauco <strong class="nickname">[Lombeira]</strong> Lomenha
+    </h1>
+    <img src="/img/2.2.png" alt="Foto do Lombeira sorrindo" width="200px" />
     <p>
       Carinhosamente apelidado por <em>"Faz-tudo da TI"</em>, sempre fui um
       entusiasta da <strong>tecnologia</strong>, e tendo como combustível o
@@ -21,20 +56,36 @@
       <strong>desenvolvimento web</strong>, me dedicando
       <strong>full-time ao estudo e crescimento profissional na área</strong>.
       Sempre aberto para trocar experiências e ideias, ou simplesmente tomar um
-      <strong><em>café! :)</em></strong>
+      <em>café! :)</em>
     </p>
     <h3>Caixa de Ferramentas</h3>
     <ul>
       <li>HTML 5</li>
       <li>CSS(SASS, LESS, BOOTSTRAP)</li>
       <li>JavaScript</li>
+      <li>React</li>
     </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <footer>
       <a href="https://www.linkedin.com/in/glaucolomenha/" target="_blank">
-        <img src="img/linkedin.png" alt="Logo do Linkedin" width="50px" />
+        <img
+          class="minilogo"
+          src="img/linkedin.png"
+          alt="Logo do Linkedin"
+          width="50px"
+        />
       </a>
       <a href="https://github.com/Lombeira" target="_blank">
-        <img src="img/github.png" alt="Logo do GitHub" width="50px" />
+        <img
+          class="minilogo2"
+          src="img/github.png"
+          alt="Logo do GitHub"
+          width="50px"
+        />
       </a>
     </footer>
   </body>
