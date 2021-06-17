@@ -127,3 +127,7 @@ footer {
 .spacin {
   width: 60px;
 }
+
+a {
+  text-decoration: none;
+}
