@@ -2,53 +2,19 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: rgb(54, 68, 80);
-        font-family: sans-serif;
-      }
-      h1 {
-        color: aliceblue;
-        margin-right: 50px;
-      }
-      h3 {
-        color: aliceblue;
-      }
-      ul {
-        color: aliceblue;
-      }
-      img {
-        border-radius: 50%;
-      }
-      p {
-        color: aliceblue;
-        line-height: 1.2em;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        max-width: 500px;
-      }
-      .nickname {
-        font-family: cursive;
-      }
-      .minilogo {
-        margin-right: 30px;
-      }
-      
-    </style>
-
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Lombeira</title>
   </head>
   <body>
     <h1 style="margin-left: 70px">
-      Glauco <strong class="nickname">[Lombeira]</strong> Lomenha
+      Glauco<strong class="nickname">[Lombeira]</strong>Lomenha
     </h1>
-    <img src="/img/2.2.png" alt="Foto do Lombeira sorrindo" width="200px" />
+    <img
+      class="avatar"
+      src="/img/2.2.png"
+      alt="Foto do Lombeira sorrindo"
+      width="200px"
+    />
     <p>
       Carinhosamente apelidado por <em>"Faz-tudo da TI"</em>, sempre fui um
       entusiasta da <strong>tecnologia</strong>, e tendo como combustível o
@@ -58,18 +24,28 @@
       Sempre aberto para trocar experiências e ideias, ou simplesmente tomar um
       <em>café! :)</em>
     </p>
-    <h3>Caixa de Ferramentas</h3>
-    <ul>
-      <li>HTML 5</li>
-      <li>CSS(SASS, LESS, BOOTSTRAP)</li>
-      <li>JavaScript</li>
-      <li>React</li>
-    </ul>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <div class="skills">
+      <h3>Caixa de Ferramentas</h3>
+      <ul class="c-list">
+        <li class="c-list__item">HTML 5</li>
+        <li class="c-list__item">CSS</li>
+        <ul>
+          <li>Sass</li>
+          <li>Less</li>
+          <li>BOOTSTRAP</li>
+        </ul>
+        <li class="c-list__item">JavaScript</li>
+        <li class="c-list__item">React</li>
+      </ul>
+      <h3>Software</h3>
+      <ul class="c-list">
+        <li class="c-list__item">Photoshop</li>
+        <li class="c-list__item">After Effects</li>
+        <li class="c-list__item">Premiere</li>
+        <li class="c-list__item">Cubase</li>
+        <li class="c-list__item">Reaper</li>
+      </ul>
+    </div>
     <footer>
       <a href="https://www.linkedin.com/in/glaucolomenha/" target="_blank">
         <img
