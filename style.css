@@ -49,9 +49,34 @@ p {
   color: aliceblue;
   line-height: 1.2em;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
   max-width: 500px;
+  border: 1px aliceblue dashed;
+  border-radius: 1%;
+  padding: 10px;
+  margin-bottom: 35px;
+  flex-direction: row;
+}
+.proj {
+  display: flex;
+
+  color: aliceblue;
+  line-height: 1.2em;
+  text-align: center;
+  max-width: 500px;
+  border: 1px aliceblue dashed;
+  border-radius: 1%;
+  padding: 10px;
+  margin-bottom: 35px;
+  padding: 0px;
+  border: 0;
+}
+.proj2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  border: 0;
 }
 
 .nickname {
@@ -65,9 +90,18 @@ p {
 }
 
 .avatar {
+  margin-left: 130px;
   border-radius: 50%;
-  border: 2px solid aliceblue;
+  border: 1px dashed aliceblue;
 }
+
+.avatar2 {
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 1px dashed aliceblue;
+  margin-bottom: 20px;
+}
+
 .skills {
   display: flex;
 
@@ -79,8 +113,17 @@ p {
   margin-bottom: 5px;
 }
 .space_between {
-  padding: 60px;
+  padding: 50px;
 }
 footer {
   margin-top: 50px;
+}
+
+.projetos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spacin {
+  width: 60px;
 }
