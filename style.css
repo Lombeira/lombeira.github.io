@@ -23,15 +23,12 @@ body {
   justify-content: center;
   flex-direction: column;
   background-color: rgb(54, 68, 80);
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-  display: flex;
   color: aliceblue;
-  justify-content: center;
-  align-items: center;
-  margin-right: 40px;
+  padding: 10px;
 }
 
 h3 {
@@ -56,20 +53,22 @@ p {
   margin-bottom: 35px;
   flex-direction: row;
 }
-.proj {
-  display: flex;
 
-  color: aliceblue;
-  line-height: 1.2em;
-  text-align: center;
-  max-width: 500px;
-  border: 1px aliceblue dashed;
-  border-radius: 1%;
-  padding: 10px;
-  margin-bottom: 35px;
-  padding: 0px;
-  border: 0;
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 50px;
 }
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  margin-left: 30px;
+}
+
 .proj2 {
   display: flex;
   justify-content: center;
@@ -85,14 +84,24 @@ p {
   margin-left: 10px;
 }
 
+.nickname:hover{
+  text-decoration: line-through;
+  filter: invert(100%);
+}
+
 .minilogo {
   margin-right: 30px;
+  width: 50px;
+}
+
+.minilogo:hover {
+  filter: invert(100%);
 }
 
 .avatar {
-  margin-left: 130px;
   border-radius: 50%;
   border: 1px dashed aliceblue;
+  width: 200px;
 }
 
 .avatar2 {
@@ -104,9 +113,14 @@ p {
 
 .skills {
   display: flex;
-
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
+}
+
+.skills-sub {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 60px;
 }
 
 .sub_item {
@@ -114,9 +128,6 @@ p {
 }
 .space_between {
   padding: 50px;
-}
-footer {
-  margin-top: 50px;
 }
 
 .projetos {
@@ -128,6 +139,22 @@ footer {
   width: 60px;
 }
 
-a {
-  text-decoration: none;
+.hover-proj {
+  display: block;
+}
+
+.projects-hover {
+  display: none;
+}
+
+.switch:hover .hover-proj {
+  display: none;
+}
+
+.switch:hover .projects-hover {
+  display: flex;
+}
+
+.switch {
+  margin-bottom: 20px;
 }
