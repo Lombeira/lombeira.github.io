@@ -18,13 +18,12 @@
   border-radius: 10px;
 }
 
-
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(54, 68, 80);
+  background-color: black;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -88,7 +87,7 @@ a {
   border: 0;
 }
 
-.nickname:hover{
+.nickname:hover {
   text-decoration: line-through;
   filter: invert(100%);
 }
@@ -175,57 +174,57 @@ a {
 
 #axis {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   top: 20%;
-  padding-left: 25px;  
-  }
-  
-  #axis h2 {
+  padding-left: 25px;
+}
+
+#axis h2 {
   float: left;
   transition: all 1s ease-in;
   -webkit-transition: all 1s ease-in;
   -moz-transition: all 1s ease-in;
   -o-transition: all 1s ease-in;
-  }
-  
-  #axis .move-left {
+}
+
+#axis .move-left {
   transform: translateX(1300px);
   -webkit-transform: translateX(1300px);
   -o-transform: translateX(1300px);
   -moz-transform: translateX(1300px);
-  }
-  
-  #axis .move-right {
+}
+
+#axis .move-right {
   transform: translateX(-1300px);
   -webkit-transform: translateX(-1300px);
   -o-transform: translateX(-1300px);
   -moz-transform: translateX(-1300px);
-  }
-  
-  
-  #axis:hover .move-left, #axis:hover .move-right {
+}
+
+#axis:hover .move-left,
+#axis:hover .move-right {
   transform: translateX(0px);
   -webkit-transform: translateX(0);
   -o-transform: translateX(0);
   -moz-transform: translateX(0);
-  }
-  
-  .const {
-    font-size: 18px;
-    color: aliceblue;
-    margin:auto;
-    position: absolute;
-    top: 85px;
-    right: 45px;
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
-  }
+}
 
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 1;
-  }
- 
+.const {
+  font-size: 18px;
+  color: aliceblue;
+  margin: auto;
+  position: absolute;
+  top: 85px;
+  right: 45px;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
