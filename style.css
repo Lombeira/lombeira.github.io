@@ -1,5 +1,6 @@
-/*Custom toolbar*/
-
+* {
+  z-index: 2;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -16,6 +17,7 @@
   background: rgb(26, 32, 37);
   border-radius: 10px;
 }
+
 
 body {
   display: flex;
@@ -96,8 +98,18 @@ a {
   width: 50px;
 }
 
+.minilogogit {
+  margin-right: 30px;
+  width: 50px;
+  filter: invert(100%);
+}
+
 .minilogo:hover {
   filter: invert(100%);
+}
+
+.minilogogit:hover {
+  filter: invert(50%);
 }
 
 .avatar {
@@ -206,7 +218,14 @@ a {
     top: 85px;
     right: 45px;
     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
-
   }
 
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+  }
  
