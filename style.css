@@ -117,6 +117,10 @@ a {
   width: 200px;
 }
 
+.avatar:hover {
+  transform: scale(1.2);
+}
+
 .avatar2 {
   margin-top: 20px;
   border-radius: 50%;
