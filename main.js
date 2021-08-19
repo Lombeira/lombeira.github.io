@@ -109,11 +109,17 @@ window.addEventListener('scroll', () => {
   activateMenuAtCurrentSection();
 });
 
-// Ativa o Dark Mode
+// Ativa o Dark Mode Desktop e Mobile
 
 const btn = document.querySelector('.btn-toggle');
 
 btn.addEventListener('click', function () {
+  document.body.classList.toggle('dark-theme');
+});
+
+const btnMobile = document.querySelector('.btn-toggle-mobile');
+
+btnMobile.addEventListener('click', function () {
   document.body.classList.toggle('dark-theme');
 });
 

@@ -4208,10 +4208,10 @@
 .icon-menu2:before {
   content: "\e9be";
 }
-.icon-menu3:before {
+.icon-open:before {
   content: "\e9bf";
 }
-.icon-menu4:before {
+.icon-close:before {
   content: "\e9c0";
 }
 .icon-cloud:before {
