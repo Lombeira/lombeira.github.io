@@ -101,9 +101,15 @@ function activateMenuAtCurrentSection() {
   }
 }
 
+function changeColorsWhenScroll() {
+  let randomColor = Math.floor(Math.random() * 360) + 1;
+  document.documentElement.style.setProperty('--hue', `${randomColor}`);
+}
+
 // When Scroll
 
 window.addEventListener('scroll', () => {
+  changeColorsWhenScroll();
   changeHeaderWhenScroll();
   backToTop();
   activateMenuAtCurrentSection();
