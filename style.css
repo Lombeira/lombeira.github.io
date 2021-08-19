@@ -294,7 +294,8 @@ nav.show div.icon-close {
 }
 
 #home .container {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #home .image {
@@ -308,7 +309,7 @@ nav.show div.icon-close {
   background: var(--base-color-second);
   position: absolute;
   top: -6.8%;
-  left: 25.8%;
+  left: 27.8%;
   z-index: 0;
 }
 
@@ -769,6 +770,12 @@ footer a:nth-child(3) i:hover {
   }
 
   #home .container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  #home .container {
     grid-auto-flow: column;
     justify-content: space-between;
     align-items: center;
@@ -859,5 +866,4 @@ footer a:nth-child(3) i:hover {
 }
 /* medium devices:767 > */
 @media (min-width: 767px) {
-  
 }
