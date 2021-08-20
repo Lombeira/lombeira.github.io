@@ -74,6 +74,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
+  overflow-x: hidden;
   font: 400 1rem var(--body-font);
   color: var(--text-color);
   background: var(--body-color);
@@ -113,7 +114,7 @@ body.dark-theme {
   padding: 0 2rem;
   border-radius: 0.25rem;
   font: 500 1rem var(--body-font);
-  transition: background 0.3s;
+  transition: background 0.6s;
 }
 
 .button:hover {
@@ -197,19 +198,18 @@ body.dark-theme {
 /*================== LOGO ==================*/
 
 .logo {
-  transition: 0.5s;
-
+  transition: 0.8s;
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
 }
 
 .logo span {
-  transition: 0.5s;
+  transition: 0.8s;
   color: var(--base-color);
 }
 
 .logo-alt span {
-  transition: 0.5s;
+  transition: 0.8s;
   color: var(--body-color);
 }
 
@@ -228,7 +228,7 @@ nav ul li {
 }
 
 nav ul li a {
-  transition: color 0.2s;
+  transition: color 0.3s;
   position: relative;
 }
 
@@ -245,12 +245,11 @@ nav ul li a::after {
   position: absolute;
   left: 0;
   bottom: -1rem;
-  transition: width 0.2s;
+  transition: width 0.3s;
 }
 
 nav ul li a:hover::after,
 nav ul li a.active::after {
-  transition: 0.8s;
   width: 100%;
 }
 
@@ -258,7 +257,6 @@ nav .menu {
   opacity: 0;
   visibility: hidden;
   top: -20rem;
-  transition: 0.2s;
 }
 
 nav .menu ul {
@@ -267,12 +265,16 @@ nav .menu ul {
 
 /*======== Show Menu =========*/
 
+nav > div {
+  transition: 0.8s;
+}
+
 nav.show .menu {
   display: grid;
   place-content: center;
   opacity: 1;
   visibility: visible;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--body-color);
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -306,7 +308,7 @@ nav .icon-close {
   position: absolute;
   top: -1.5rem;
   right: 1.5rem;
-  transition: 0.2s;
+  transition: 0.8s;
 }
 
 nav.show div.icon-close {
@@ -439,28 +441,28 @@ nav.show div.icon-close {
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(1):hover {
   background-color: rgba(207, 167, 56, 0.2);
   border-bottom: 0.25rem solid #e34f26;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(1):hover i {
   color: #e34f26;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(2) .card-hover {
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(2):hover {
   border-image: linear-gradient(to right, #f7df1e, #007acc);
   border-image-slice: 1;
-  transition: 0.3s;
+  transition: 0.6s;
   background-image: linear-gradient(
     to right,
     rgba(195, 166, 0, 0.15),
@@ -470,33 +472,33 @@ nav.show div.icon-close {
 
 .card:nth-child(2):hover i {
   color: #f7df1e;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(2):hover i + i {
   color: #007acc;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(3):hover {
   background-color: rgba(117, 150, 187, 0.2);
   border-bottom: 0.25rem solid #77b1db;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(3):hover i {
   color: #77b1db;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(4) .card-hover {
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(4):hover {
   border-image: linear-gradient(to right, #61dafb, #764abc);
   border-image-slice: 1;
-  transition: 0.3s;
+  transition: 0.6s;
   background-image: linear-gradient(
     to right,
     rgba(0, 156, 195, 0.15),
@@ -505,22 +507,23 @@ nav.show div.icon-close {
 }
 
 .card:nth-child(4):hover i {
-  transition: 0.3s;
+  transition: 0.6s;
   color: #61dafb;
 }
 
 .card:nth-child(4):hover i + i {
+  transition: 0.6s;
   color: #764abc;
 }
 
 .card:nth-child(5) .card-hover {
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(5):hover {
   border-image: linear-gradient(to right, #f05032, #000000);
   border-image-slice: 1;
-  transition: 0.3s;
+  transition: 0.6s;
   background-image: linear-gradient(
     to right,
     rgba(255, 78, 34, 0.15),
@@ -529,22 +532,23 @@ nav.show div.icon-close {
 }
 
 .card:nth-child(5):hover i {
-  transition: 0.3s;
+  transition: 0.6s;
   color: #f05032;
 }
 
 .card:nth-child(5):hover i + i {
+  transition: 0.6s;
   color: #000000;
 }
 
 .card:nth-child(6) .card-hover {
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card:nth-child(6):hover {
   border-image: linear-gradient(to right, #47a248, #4479a1);
   border-image-slice: 1;
-  transition: 0.3s;
+  transition: 0.6s;
   background-image: linear-gradient(
     to right,
     rgba(0, 161, 22, 0.15),
@@ -553,11 +557,12 @@ nav.show div.icon-close {
 }
 
 .card:nth-child(6):hover i {
-  transition: 0.3s;
+  transition: 0.6s;
   color: #47a248;
 }
 
 .card:nth-child(6):hover i + i {
+  transition: 0.6s;
   color: #4479a1;
 }
 
@@ -566,14 +571,16 @@ nav.show div.icon-close {
   margin-bottom: 1.5rem;
   font-size: 4.5rem;
   color: var(--base-color);
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .card i + i {
+  transition: 0.6s;
   margin-left: 1rem;
 }
 
 .card .title {
+  transition: 0.6s;
   font-size: 1.5rem;
   margin-bottom: 0.75;
 }
@@ -703,7 +710,7 @@ footer .brand p {
 footer i {
   font-size: 2.5rem;
   color: var(--text-color-light);
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 footer .social {
@@ -713,7 +720,7 @@ footer .social {
 footer .social a {
   margin-top: 1.5rem;
   margin-right: 2rem;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 footer .social a:hover {
@@ -730,6 +737,13 @@ footer a:nth-child(3) i:hover {
   color: #242424;
 }
 
+#visual {
+  transition: 0.8s;
+  position: absolute;
+  transform: translateX(160px);
+  fill: var(--base-color-second);
+}
+
 /*================== BACK TO TOP ==================*/
 
 .back-to-top {
@@ -743,7 +757,7 @@ footer a:nth-child(3) i:hover {
   clip-path: circle();
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.6s;
   transform: translateY(100%);
 }
 
@@ -907,6 +921,13 @@ footer a:nth-child(3) i:hover {
 
   footer .logo {
     font-size: 2.25rem;
+  }
+
+  #visual {
+    transition: 0.8s;
+    position: absolute;
+    transform: translateX(400px);
+    fill: var(--base-color-second);
   }
 }
 /* larger devices: 1023 >  */

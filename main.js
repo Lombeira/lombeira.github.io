@@ -144,6 +144,15 @@ card.forEach((card, index) => {
   });
 });
 
+const moovingBlob = KUTE.fromTo(
+  '#blob1',
+  { path: '#blob1' },
+  { path: '#blob2' },
+  { repeat: 999, duration: 3000, yoyo: true }
+);
+
+moovingBlob.start();
+
 // card.forEach((card, index) => {
 // if (text[index].classList.contains('show-text')) {
 //   text[].classList.add('show-text');
