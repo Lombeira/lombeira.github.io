@@ -154,5 +154,3 @@ card.forEach((card, index) => {
 // );
 
 // moovingBlob.start();
-
-
