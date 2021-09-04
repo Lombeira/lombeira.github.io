@@ -101,10 +101,12 @@ function activateMenuAtCurrentSection() {
   }
 }
 
-function changeColorsWhenScroll() {
-  let randomColor = Math.floor(Math.random() * 360) + 1;
-  document.documentElement.style.setProperty('--hue', `${randomColor}`);
-}
+// Change the site color when scroll
+
+// function changeColorsWhenScroll() {
+//   let randomColor = Math.floor(Math.random() * 360) + 1;
+//   document.documentElement.style.setProperty('--hue', `${randomColor}`);
+// }
 
 // When Scroll
 
@@ -144,17 +146,13 @@ card.forEach((card, index) => {
   });
 });
 
-const moovingBlob = KUTE.fromTo(
-  '#blob1',
-  { path: '#blob1' },
-  { path: '#blob2' },
-  { repeat: 999, duration: 3000, yoyo: true }
-);
+// const moovingBlob = KUTE.fromTo(
+//   '#blob1',
+//   { path: '#blob1' },
+//   { path: '#blob2' },
+//   { repeat: 999, duration: 3000, yoyo: true }
+// );
 
-moovingBlob.start();
+// moovingBlob.start();
 
-// card.forEach((card, index) => {
-// if (text[index].classList.contains('show-text')) {
-//   text[].classList.add('show-text');
-// }
-// };
+
