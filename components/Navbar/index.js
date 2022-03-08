@@ -1,7 +1,11 @@
 import { Icon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {
   Box,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
   Button,
+  chakra,
   Flex,
   Heading,
   IconButton,
@@ -17,28 +21,42 @@ export default function NavBar() {
     <Flex as="nav" mt="2">
       <Box p="2" ml="4">
         <Heading size="md">
-          Lomb<span>eira</span>.
+          Lomb
+          <chakra.span color={colorMode === 'light' ? 'blue.500' : 'blue.300'}>
+            eira
+          </chakra.span>
+          .
         </Heading>
       </Box>
+      <Spacer />
+      <Breadcrumb separator=" " mt="2">
+        <BreadcrumbItem>
+          <BreadcrumbLink href="#">Home</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem>
+          <BreadcrumbLink href="#">About</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink href="#">Contact</BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
       <Spacer />
       <Box mr="4">
         {colorMode === 'light' ? (
           <IconButton
             icon={<Icon as={SunIcon} />}
             onClick={toggleColorMode}
-            mr="4"
+            mr="2"
           />
         ) : (
           <IconButton
             icon={<Icon as={MoonIcon} />}
             onClick={toggleColorMode}
-            mr="4"
+            mr="2"
           />
         )}
-        <Button colorScheme="blue" mr="4">
-          Sign Up
-        </Button>
-        <Button colorScheme="blue">Log in</Button>
       </Box>
     </Flex>
   );
