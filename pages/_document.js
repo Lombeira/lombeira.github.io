@@ -1,4 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+import { ColorModeScript, theme } from '@chakra-ui/react';
 
 export default class MyDocuments extends Document {
   render() {
@@ -6,13 +7,18 @@ export default class MyDocuments extends Document {
       <Html>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:wght@700&display=swap"
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@800&family=Montserrat:wght@100;400&family=Permanent+Marker&family=Poppins:wght@700&display=swap"
             rel="stylesheet"
           />
         </Head>
         <body>
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
         </body>

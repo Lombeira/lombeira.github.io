@@ -1,20 +1,31 @@
 import { extendTheme } from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
 
 const colors = {
-  brand: {
-    900: '#1a365d',
-    800: '#153e75',
-    700: '#2a69ac',
+  transparent: 'transparent',
+  black: '#000',
+  white: '#fff',
+  gray: {
+    50: '#f7fafc',
+    900: '#171923',
   },
 };
 
-const fonts = { heading: 'Poppins', body: 'Montserrat' };
+const fonts = { heading: 'Lexend Mega', body: 'Montserrat' };
 
 const config = {
   initialColorMode: 'light',
   useSystemColorMode: true,
 };
 
-const theme = extendTheme({ colors, config, fonts });
+const styles = {
+  global: (props) => ({
+    body: {
+      bg: mode(colors.white, colors.black)(props),
+    },
+  }),
+};
+
+const theme = extendTheme({ colors, config, fonts, styles });
 
 export default theme;
