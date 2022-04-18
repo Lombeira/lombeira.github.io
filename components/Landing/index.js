@@ -18,9 +18,9 @@ const StyledDiv = chakra(motion.div, {
 const Title = ({ delay = 0 }) => {
   return (
     <StyledDiv
-      initial={{ y: -600, opacity: 0 }}
-      animate={{ ease: 'bounce', y: -800, opacity: 1 }}
-      transition={{ type: 'spring', stiffness: 100, duration: 1.2, delay: 2 }}
+      initial={{ y: -700, opacity: 0 }}
+      animate={{ ease: 'bounce', y: -900, opacity: 1 }}
+      transition={{ type: 'spring', stiffness: 100, duration: 1.5, delay: 2 }}
     >
       <Center>
         <Heading as="h1" pos="absolute" size="4xl">
@@ -37,9 +37,9 @@ const Title = ({ delay = 0 }) => {
 const TitleMask = ({ delay = 0 }) => {
   return (
     <StyledDiv
-      initial={{ y: -600, opacity: 1 }}
-      animate={{ ease: 'bounce', y: -800, opacity: 0 }}
-      transition={{ type: 'spring', stiffness: 100, duration: 1.2, delay: 2 }}
+      initial={{ y: -700, opacity: 1 }}
+      animate={{ ease: 'bounce', y: -900, opacity: 0 }}
+      transition={{ type: 'spring', stiffness: 100, duration: 1.5, delay: 2 }}
     >
       <Center>
         <Heading as="h1" pos="absolute" size="4xl" color="black">
@@ -54,23 +54,25 @@ const TitleMask = ({ delay = 0 }) => {
 };
 
 const Landing = ({ delay = 0 }) => (
-  <StyledDiv
-    initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 2, delay }}
-    mb={6}
-  >
-    <Box align="center" pos="relative">
-      <ChakraImage
-        src={Spotlight}
-        layout="fill"
-        objectFit="none"
-        quality={80}
-      />
-      <Title />
-      <TitleMask />
-    </Box>
-  </StyledDiv>
+  <>
+    <StyledDiv
+      initial={{ y: 0, opacity: 0.5 }}
+      animate={{ y: -300, opacity: 1 }}
+      transition={{ duration: 3, delay: 1.5 }}
+      mb={6}
+    >
+      <Box align="center" pos="relative">
+        <ChakraImage
+          src={Spotlight}
+          layout="fill"
+          objectFit="none"
+          quality={80}
+        />
+      </Box>
+    </StyledDiv>
+    <Title />
+    <TitleMask />
+  </>
 );
 
 export default Landing;
