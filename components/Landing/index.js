@@ -8,6 +8,8 @@ import {
 } from '@chakra-ui/react';
 import Spotlight from '../../public/Spotlight.png';
 import ChakraImage from '../ChakraImage';
+import VSCode from '../VSCode';
+import Iphone from '../Iphone';
 
 const StyledDiv = chakra(motion.div, {
   shouldForwardProp: (prop) => {
@@ -53,6 +55,30 @@ const TitleMask = ({ delay = 0 }) => {
   );
 };
 
+const VSCodeAnimated = ({ delay = 0 }) => {
+  return (
+    <StyledDiv
+      initial={{ y: -300, x: 800, opacity: 0, rotate: 0 }}
+      animate={{ ease: 'bounce', y: -750, x: 200, opacity: 1, rotate: -5 }}
+      transition={{ type: 'spring', stiffness: 200, duration: 5, delay: 3 }}
+    >
+      <VSCode />
+    </StyledDiv>
+  );
+};
+
+const IphoneAnimated = ({ delay = 0 }) => {
+  return (
+    <StyledDiv
+      initial={{ y: -700, x: 100, opacity: 0, rotate: 0 }}
+      animate={{ ease: 'bounce', y: -1100, x: 800, opacity: 1, rotate: 7 }}
+      transition={{ type: 'spring', stiffness: 200, duration: 5, delay: 4 }}
+    >
+      <Iphone />
+    </StyledDiv>
+  );
+};
+
 const Landing = ({ delay = 0 }) => (
   <>
     <StyledDiv
@@ -72,6 +98,8 @@ const Landing = ({ delay = 0 }) => (
     </StyledDiv>
     <Title />
     <TitleMask />
+    <VSCodeAnimated />
+    <IphoneAnimated />
   </>
 );
 
