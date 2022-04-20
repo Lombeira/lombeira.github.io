@@ -45,7 +45,7 @@ export default function VSCode() {
           </Flex>
         </Box>
         <Text fontSize="0.7rem" color="pink.400">
-          import react from 'react'
+          import react from &apos;react&apos;
         </Text>
       </Flex>
     </Box>
