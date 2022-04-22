@@ -1,4 +1,3 @@
-import { Center } from '@chakra-ui/react';
 import Head from 'next/head';
 import MemedCTA from '../components/CTA/MemedCTA';
 import Footer from '../components/Footer';
