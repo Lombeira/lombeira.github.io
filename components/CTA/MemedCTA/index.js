@@ -11,8 +11,8 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import memed from '../../../public/memed.png';
-import ChakraImage from '../ChakraImage';
-import Section from '../Transitions/Section';
+import ChakraImage from '../../ChakraImage';
+import Section from '../../Transitions/Section';
 
 export default function MemedCTA() {
   return (

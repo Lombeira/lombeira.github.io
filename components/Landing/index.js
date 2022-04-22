@@ -3,7 +3,6 @@ import {
   Box,
   Center,
   chakra,
-  Flex,
   Heading,
   shouldForwardProp,
 } from '@chakra-ui/react';
@@ -121,7 +120,7 @@ const Landing = ({ delay = 0 }) => (
       mb={6}
     >
       <Box align="center" pos="relative">
-        <ChakraImage src={Spotlight} layout="fill" quality={80} />
+        <ChakraImage src={Spotlight} quality={80} />
       </Box>
     </StyledDiv>
     <Title />
