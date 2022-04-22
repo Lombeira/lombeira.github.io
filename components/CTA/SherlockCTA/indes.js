@@ -10,7 +10,7 @@ import {
   createIcon,
   useColorModeValue,
 } from '@chakra-ui/react';
-import sherlock from '../../public/sherlock.png';
+import sherlock from '../../../public/sherlock.png';
 import ChakraImage from '../ChakraImage';
 import Section from '../Transitions/Section';
 

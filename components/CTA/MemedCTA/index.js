@@ -10,7 +10,7 @@ import {
   createIcon,
   useColorModeValue,
 } from '@chakra-ui/react';
-import memed from '../../public/memed.png';
+import memed from '../../../public/memed.png';
 import ChakraImage from '../ChakraImage';
 import Section from '../Transitions/Section';
 
