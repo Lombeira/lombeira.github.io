@@ -13,7 +13,6 @@ import {
 import memed from '../../public/memed.png';
 import ChakraImage from '../ChakraImage';
 import Section from '../Transitions/Section';
-import ZoomIn from '../Transitions/ZoomIn';
 
 export default function MemedCTA() {
   return (
