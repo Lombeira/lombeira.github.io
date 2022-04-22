@@ -60,7 +60,7 @@ const VSCodeAnimated = ({ delay = 0 }) => {
   return (
     <Center>
       <StyledDiv
-        initial={{ y: -300, x: 400, opacity: 1, rotate: 0 }}
+        initial={{ y: 100, x: 400, opacity: 1, rotate: 0 }}
         animate={{ ease: 'bounce', y: -790, x: -100, opacity: 1, rotate: -5 }}
         transition={{ type: 'tween', stiffness: 200, duration: 1, delay: 3 }}
       >
@@ -73,7 +73,7 @@ const VSCodeAnimated = ({ delay = 0 }) => {
 const IphoneAnimated = ({ delay = 0 }) => {
   return (
     <StyledDiv
-      initial={{ y: -700, x: 0, opacity: 1, rotate: 0 }}
+      initial={{ y: 100, x: 0, opacity: 1, rotate: 0 }}
       animate={{ ease: 'bounce', y: -1200, x: 300, opacity: 1, rotate: 7 }}
       transition={{ type: 'tween', stiffness: 200, duration: 1, delay: 3.5 }}
     >
