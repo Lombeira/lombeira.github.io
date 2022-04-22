@@ -5,15 +5,14 @@ import React from 'react';
 export default function Iphone() {
   return (
     <Box
-      maxW="14.1rem"
-      h="26.1rem"
-      borderWidth="1px"
+      w="13.2rem"
+      h="26.2rem"
+      borderWidth="2px"
       borderRadius="3xl"
       background="#39393A"
-      ml="4"
     >
       <Box
-        maxW="14rem"
+        w="13rem"
         h="26rem"
         borderWidth="8px"
         borderColor="black"
@@ -25,7 +24,7 @@ export default function Iphone() {
           background="#212121"
           h="5%"
           maxW="50%"
-          ml="3.5rem"
+          ml="3.2rem"
           borderBottomRadius="xl"
         >
           <Center w="7.5rem" h="15px">
