@@ -36,7 +36,7 @@ export default function Header() {
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}
         py={{ base: 2 }}
-        px={{ base: 4 }}
+        px={{ base: 2, sm: 2, md: 8, lg: 14 }}
         borderBottom={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
@@ -56,22 +56,28 @@ export default function Header() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            fontSize={'x-large'}
-            color={useColorModeValue('gray.800', 'white')}
-          >
-            Lomb
-            <Box
-              as="span"
-              color={colorMode === 'light' ? 'blue.400' : 'blue.200'}
+        <Flex
+          flex={{ base: 1 }}
+          justify={{ base: 'center', md: 'start' }}
+          cursor="pointer"
+        >
+          <Link href="/home">
+            <Text
+              textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+              fontFamily={'heading'}
+              fontSize={'x-large'}
+              color={useColorModeValue('gray.800', 'white')}
             >
-              eira
-            </Box>
-            .
-          </Text>
+              Lomb
+              <Box
+                as="span"
+                color={colorMode === 'light' ? 'purple.600' : 'purple.300'}
+              >
+                eira
+              </Box>
+              .
+            </Text>
+          </Link>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -84,7 +90,7 @@ export default function Header() {
           direction={'row'}
           spacing={6}
         >
-          <Button
+          {/* <Button
             as={'a'}
             fontSize={'sm'}
             fontWeight={600}
@@ -98,14 +104,14 @@ export default function Header() {
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
-            bg={colorMode === 'light' ? 'blue.400' : 'blue.200'}
+            bg={colorMode === 'light' ? 'purple.600' : 'purple.400'}
             href={'#'}
             _hover={{
-              bg: 'blue.300',
+              bg: 'purple.300',
             }}
           >
             Sign Up
-          </Button>
+          </Button> */}
           <Button onClick={toggleColorMode}>
             {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
           </Button>
@@ -177,7 +183,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
+      _hover={{ bg: useColorModeValue('purple.400', 'gray.900') }}
     >
       <Stack direction={'row'} align={'center'}>
         <Box>
@@ -185,8 +191,8 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
             transition={'all .3s ease'}
             _groupHover={
               colorMode === 'light'
-                ? { color: 'blue.400' }
-                : { color: 'blue.200' }
+                ? { color: 'purple.400' }
+                : { color: 'purple.200' }
             }
             fontWeight={500}
             mb={1}
@@ -204,7 +210,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
           align={'center'}
           flex={1}
         >
-          <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={'purple.400'} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Link>
@@ -283,14 +289,19 @@ const NAV_ITEMS = [
     label: 'Carreira',
     children: [
       {
-        label: 'Explore Design Work',
+        label: 'Trybe',
         subLabel: 'Trending Design to inspire you',
         href: '#',
       },
       {
-        label: 'New & Noteworthy',
+        label: 'Sherlock Home',
         subLabel: 'Up-and-coming Designers',
-        href: '#',
+        href: '/sherlock',
+      },
+      {
+        label: 'Memed',
+        subLabel: 'A maior e mais promissora healthtech do Brasil',
+        href: '/memed',
       },
     ],
   },
@@ -310,17 +321,14 @@ const NAV_ITEMS = [
       },
       {
         label: 'Sherlock home',
-        subLabel: 'Conheça esta plataforma contruída por mim do completo zero.',
+        subLabel:
+          'Conheça esta plataforma construída por mim do completo zero.',
         href: '#',
       },
     ],
   },
   {
     label: 'Contato',
-    href: '#',
-  },
-  {
-    label: 'Hire Designers',
-    href: '#',
+    href: '/contact',
   },
 ];

@@ -24,7 +24,6 @@ export default function Iphone() {
         <Box
           background="#212121"
           h="5%"
-          maxW="50%"
           ml="2.4rem"
           borderBottomRadius="xl"
           position="absolute"

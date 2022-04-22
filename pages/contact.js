@@ -1,9 +1,11 @@
+import { Center } from '@chakra-ui/react';
 import Head from 'next/head';
+import CallToActionWithVideo from '../components/CTA/memedCTA';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import List from '../components/List';
+import Section from '../components/Section';
 
-export default function Home() {
+export default function Contact() {
   return (
     <div>
       <Head>
@@ -13,12 +15,10 @@ export default function Home() {
       </Head>
 
       <header>
-        <Header></Header>
+        <Header />
       </header>
 
-      <main>
-        <List></List>
-      </main>
+      <main>Contato</main>
 
       <Footer />
     </div>

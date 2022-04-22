@@ -19,7 +19,7 @@ const List = () => {
       p="4"
     >
       <Flex align="center" mx="2">
-        <Icon viewBox="0 0 200 200" color="red.500">
+        <Icon viewBox="0 0 200 200" color={ colorMode === 'light' ? 'purple.600' : 'purple.400' }>
           <path
             fill="currentColor"
             d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
@@ -37,7 +37,7 @@ const List = () => {
       </Flex>
       <Divider orientation="vertical" borderColor="gray.300" my="2" />
       <Flex align="center" mx="2">
-        <Icon viewBox="0 0 200 200" color="red.500">
+        <Icon viewBox="0 0 200 200" color={ colorMode === 'light' ? 'purple.600' : 'purple.400' }>
           <path
             fill="currentColor"
             d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
@@ -55,7 +55,7 @@ const List = () => {
       </Flex>
       <Divider orientation="vertical" borderColor="gray.300" my="2" />
       <Flex align="center" mx="2">
-        <Icon viewBox="0 0 200 200" color="red.500">
+        <Icon viewBox="0 0 200 200" color={ colorMode === 'light' ? 'purple.600' : 'purple.400' }>
           <path
             fill="currentColor"
             d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"

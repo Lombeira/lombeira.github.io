@@ -1,10 +1,24 @@
-import { Box } from '@chakra-ui/react';
+import { Box, Center, Text, useColorMode } from '@chakra-ui/react';
 
 const Footer = () => {
+  const { colorMode } = useColorMode();
+
   return (
-    <Box bg="black" align="center" opacity={0.6} fontSize="sm" pt="4" pb="4">
-      &copy; {new Date().getFullYear()} Glauco Lomenha. All Rights Reserved.
-    </Box>
+    <Center>
+      <Box
+        bg={colorMode === 'light' ? 'white' : 'black'}
+        opacity={1}
+        w="100%"
+        fontSize="sm"
+        p="4"
+        position="fixed"
+        bottom="0"
+      >
+        <Text align="center">
+          &copy; {new Date().getFullYear()} Glauco Lomenha. All Rights Reserved.
+        </Text>
+      </Box>
+    </Center>
   );
 };
 

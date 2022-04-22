@@ -11,6 +11,7 @@ import Spotlight from '../../public/Spotlight.png';
 import ChakraImage from '../ChakraImage';
 import VSCode from '../VSCode';
 import Iphone from '../Iphone';
+import Button from '../Button';
 
 const StyledDiv = chakra(motion.div, {
   shouldForwardProp: (prop) => {
@@ -21,9 +22,14 @@ const StyledDiv = chakra(motion.div, {
 const Title = ({ delay = 0 }) => {
   return (
     <StyledDiv
-      initial={{ y: -700, opacity: 0 }}
-      animate={{ ease: 'bounce', y: -950, opacity: 1 }}
-      transition={{ type: 'spring', stiffness: 100, duration: 8, delay: 3 }}
+      initial={{ y: -700, opacity: 0, scale: 1 }}
+      animate={{
+        ease: 'bounce',
+        y: -950,
+        opacity: 1,
+        scale: [1, 1, 0.8],
+      }}
+      transition={{ type: 'spring', stiffness: 100, duration: 2, delay: 3 }}
     >
       <Center>
         <Heading as="h1" pos="absolute" size="4xl">
@@ -58,15 +64,15 @@ const TitleMask = ({ delay = 0 }) => {
 
 const VSCodeAnimated = ({ delay = 0 }) => {
   return (
-    <Center>
-      <StyledDiv
-        initial={{ y: 100, x: 400, opacity: 1, rotate: 0 }}
-        animate={{ ease: 'bounce', y: -790, x: -100, opacity: 1, rotate: -5 }}
-        transition={{ type: 'tween', stiffness: 200, duration: 1, delay: 3 }}
-      >
+    <StyledDiv
+      initial={{ y: 100, x: 400, opacity: 1, rotate: 0 }}
+      animate={{ ease: 'bounce', y: -790, x: -100, opacity: 1, rotate: -5 }}
+      transition={{ type: 'tween', stiffness: 200, duration: 1, delay: 3 }}
+    >
+      <Center>
         <VSCode />
-      </StyledDiv>
-    </Center>
+      </Center>
+    </StyledDiv>
   );
 };
 
@@ -78,14 +84,36 @@ const IphoneAnimated = ({ delay = 0 }) => {
       transition={{ type: 'tween', stiffness: 200, duration: 1, delay: 3.5 }}
     >
       <Center>
-        <Iphone />
+        <StyledDiv
+          whileHover={{
+            scale: 1.5,
+            rotate: -7,
+            delay: 0,
+          }}
+        >
+          <Iphone />
+        </StyledDiv>
+      </Center>
+    </StyledDiv>
+  );
+};
+
+const AnimatedButton = () => {
+  return (
+    <StyledDiv
+      initial={{ y: -700, opacity: 1 }}
+      animate={{ ease: 'bounce', y: -1000, opacity: 1 }}
+      transition={{ type: 'spring', stiffness: 50, duration: 8, delay: 5 }}
+    >
+      <Center>
+        <Button href="/home">RECEBA</Button>
       </Center>
     </StyledDiv>
   );
 };
 
 const Landing = ({ delay = 0 }) => (
-  <Box overflow="hidden">
+  <Box overflow="hidden" w="100%" h="100%">
     <StyledDiv
       initial={{ y: 0, opacity: 0.5 }}
       animate={{ y: -300, opacity: 1 }}
@@ -100,6 +128,7 @@ const Landing = ({ delay = 0 }) => (
     <TitleMask />
     <VSCodeAnimated />
     <IphoneAnimated />
+    <AnimatedButton />
   </Box>
 );
 
