@@ -1,6 +1,8 @@
 import { Icon } from '@chakra-ui/icons';
-import { Box, Center, Flex, HStack, Text } from '@chakra-ui/react';
+import { Box, Center } from '@chakra-ui/react';
 import React from 'react';
+import avatarImage from '../../public/avatar.jpg';
+import ChakraImage from '../ChakraImage';
 
 export default function Iphone() {
   return (
@@ -18,17 +20,18 @@ export default function Iphone() {
         borderColor="black"
         borderRadius="3xl"
         overflow="hidden"
-        background="v"
       >
         <Box
           background="#212121"
           h="5%"
           maxW="50%"
-          ml="3.2rem"
+          ml="2.4rem"
           borderBottomRadius="xl"
+          position="absolute"
+          zIndex="1"
         >
           <Center w="7.5rem" h="15px">
-            <Box background="#39393A" h="4px" w="26px" mr="0.5rem"></Box>
+            <Box background="#39393A" h="4px" w="26px" mr="0.5rem" />
             <Icon viewBox="0 0 200 200" color="blue.900">
               <path
                 fill="currentColor"
@@ -37,6 +40,7 @@ export default function Iphone() {
             </Icon>
           </Center>
         </Box>
+        <ChakraImage src={avatarImage} />
       </Box>
     </Box>
   );
