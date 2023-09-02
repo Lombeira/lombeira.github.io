@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #1e293b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #e2e8f0;
+  }
+}
+
+body > p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+table,
+blockquote,
+pre,
+form {
+  color: var(--foreground);
+}
+
+.text-primary {
+  @apply text-slate-800 dark:text-slate-300
+}
+
+.opacity-primary {
+  @apply bg-opacity-10 dark:bg-opacity-20
+}

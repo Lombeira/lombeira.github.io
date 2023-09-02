@@ -1,0 +1,16 @@
+{
+  "cpf_generator_page_title": "CPF Generator",
+  "cpf_generator_button_label": "Generate CPF",
+  "cpf_generator_disclaimer": "IMPORTANT: The purpose of this CPF generator is to provide support to students, developers, analysts, and testers by generating valid CPF numbers, often required to test their software during the development process. Any inappropriate use of the information generated here is the user's responsibility. The digits are generated randomly, while adhering to their creation rules.",
+  "cpf_generator_combo_label": "Nothing found.",
+  "cpf_generator_checkbox_label": "Generate a CPF from a specific state",
+  "cpf_generator_mask_label": "Generate CPF with mask",
+  "cpf_generator_toast_title": "Success",
+  "cpf_generator_toast_subtitle": "Your CPF was successfully copied to your clipboard.",
+  "chakra_playground_copied": "Copied",
+  "chakra_playground_copy": "Copy",
+  "chakra_ui_editable_example_title": "This is a React playground with Live render Preview",
+  "chakra_ui_editable_example_subtitle": "It supports",
+  "and": "and",
+  "obj_to_interface_generator_page_title": "Object to Interface Generator"
+}

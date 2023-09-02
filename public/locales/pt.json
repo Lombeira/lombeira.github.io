@@ -1,0 +1,17 @@
+{
+  "cpf_generator_page_title": "Gerador de CPF",
+  "cpf_generator_button_label": "Gerar CPF",
+  "cpf_generator_disclaimer": "IMPORTANTE: O propósito deste criador de CPF, é oferecer suporte a estudantes, desenvolvedores, analistas e testadores ao gerar números de CPF válidos, frequentemente requeridos para testar seus softwares durante o processo de desenvolvimento. Qualquer uso inadequado das informações geradas aqui é de responsabilidade do usuário. Os dígitos são produzidos de maneira aleatória, respeitando suas regras de criação.",
+  "cpf_generator_combo_label": "Nenhum resultado.",
+  "cpf_generator_checkbox_label": "Gerar um CPF de um estado específico",
+  "cpf_generator_mask_label": "Gerar CPF com máscara",
+  "cpf_generator_toast_title": "Sucesso",
+  "cpf_generator_toast_subtitle": "Your CPF was successfully copied to your clipboard.",
+  "chakra_playground_copied": "Copiado",
+  "chakra_playground_copy": "Copiar",
+  "chakra_ui_editable_example": "Exemplo editável",
+  "chakra_ui_editable_example_title": "Esse é um Playground React com preview em tempo real.",
+  "chakra_ui_editable_example_subtitle": "Suporta",
+  "and": "e",
+  "obj_to_interface_generator_page_title": "Conversor de Objeto para Interface"
+}

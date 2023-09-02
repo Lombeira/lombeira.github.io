@@ -1,5 +1,5 @@
 {
-  "name": "portifolio",
+  "name": "lombeira.github.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^1.1.7",
-    "@chakra-ui/react": "^1.8.6",
-    "@emotion/react": "^11.8.1",
-    "@emotion/styled": "^11.8.1",
-    "@radix-ui/react-popover": "0.1.6",
-    "framer-motion": "^6.3.0",
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "@chakra-ui/react": "^2.8.0",
+    "@headlessui/react": "^1.7.17",
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "accept-language": "^3.0.18",
+    "autoprefixer": "10.4.15",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "lucide-react": "^0.272.0",
+    "next": "13.4.19",
+    "next-themes": "^0.2.1",
+    "postcss": "8.4.29",
+    "prism-react-renderer": "1.3.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-focus-lock": "^2.9.5",
+    "react-live": "^4.1.3",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.2.2",
+    "unidecode": "^0.1.8"
   },
   "devDependencies": {
-    "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0"
+    "@types/unidecode": "^0.1.1"
   }
 }
